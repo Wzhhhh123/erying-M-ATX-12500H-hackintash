@@ -1,4 +1,4 @@
-# Erying ITX i5-12500H OpenCore
+# Erying M-ATX i5-12500H OpenCore
 
 
 名称  | 型号版本  
