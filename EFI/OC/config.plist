@@ -94,6 +94,14 @@
                     <key>Path</key>
                     <string>SSDT-HPET.aml</string>
                 </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT.aml</string>
+                </dict>
             </array>
             <key>Delete</key>
             <array/>
@@ -279,6 +287,36 @@
                     <key>TableSignature</key>
                     <data></data>
                 </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>PNP0C09 to PNPFFFF</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data></data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data></data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
             </array>
             <key>Quirks</key>
             <dict>
@@ -352,45 +390,6 @@
         <dict>
             <key>Add</key>
             <dict>
-                <key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)</key>
-                <dict>
-                    <key>@0,name</key>
-                    <string>ATY,Orinoco</string>
-                    <key>@1,name</key>
-                    <string>ATY,Orinoco</string>
-                    <key>@2,name</key>
-                    <string>ATY,Orinoco</string>
-                    <key>@3,name</key>
-                    <string>ATY,Orinoco</string>
-                    <key>@4,name</key>
-                    <string>ATY,Orinoco</string>
-                    <key>@5,name</key>
-                    <string>ATY,Orinoco</string>
-                    <key>AAPL,slot-name</key>
-                    <string>Slot-1</string>
-                    <key>ATY,Card#</key>
-                    <string>109-D00080-00</string>
-                    <key>ATY,Copyright</key>
-                    <string>Copyright AMD Inc. All Rights Reserved. 2005-2018</string>
-                    <key>ATY,DeviceID</key>
-                    <data>32c=</data>
-                    <key>ATY,DeviceName</key>
-                    <string>570X</string>
-                    <key>ATY,EFIVersion</key>
-                    <string>01.01.042</string>
-                    <key>ATY,EFIVersionB</key>
-                    <string>113-D0008A14GL-003</string>
-                    <key>ATY,FamilyName</key>
-                    <string>Radeon Pro</string>
-                    <key>ATY,Rom#</key>
-                    <string>113-D0008A-042</string>
-                    <key>ATY,VendorID</key>
-                    <data>AhA=</data>
-                    <key>device_type</key>
-                    <string>ATY,OrinocoParent</string>
-                    <key>model</key>
-                    <string>AMD Radeon Pro 570X</string>
-                </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
                 <dict>
                     <key>AAPL,slot-name</key>
@@ -576,6 +575,42 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>CPUFriend.kext</string>
+                    <key>Comment</key>
+                    <string>V1.2.7</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/CPUFriend</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>CPUFriendDataProvider.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
                     <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>RestrictEvents.kext</string>
@@ -668,24 +703,6 @@
                     <key>Arch</key>
                     <string>Any</string>
                     <key>BundlePath</key>
-                    <string>itlwm.kext</string>
-                    <key>Comment</key>
-                    <string>V2.2.0</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/itlwm</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
                     <string>USBToolBox.kext</string>
                     <key>Comment</key>
                     <string>V1.1.1</string>
@@ -754,7 +771,248 @@
             <key>Force</key>
             <array/>
             <key>Patch</key>
-            <array/>
+            <array>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Base</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string>Visual | thread_quantum_expire, thread_unblock, thread_invoke | Remove non-monotonic time panic | 12.0+</string>
+                    <key>Count</key>
+                    <integer>3</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>SAAAAAIAAEgAAFgAAAAPAAAAAAA=</data>
+                    <key>Identifier</key>
+                    <string>kernel</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data>/wAAD/////8AAP8AAAD/AAAAAAA=</data>
+                    <key>MaxKernel</key>
+                    <string>23.99.99</string>
+                    <key>MinKernel</key>
+                    <string>21.0.0</string>
+                    <key>Replace</key>
+                    <data>AAAAAAAAAAAAAAAAAABmkGaQZpA=</data>
+                    <key>ReplaceMask</key>
+                    <data>AAAAAAAAAAAAAAAAAAD///////8=</data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Base</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string>Visual | thread_invoke, thread_dispatch | Remove non-monotonic time panic | 12.0+</string>
+                    <key>Count</key>
+                    <integer>2</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>SAAAgAQAAA8AAAAAAA==</data>
+                    <key>Identifier</key>
+                    <string>kernel</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data>SAAA8P////8AAAAAAA==</data>
+                    <key>MaxKernel</key>
+                    <string>23.99.99</string>
+                    <key>MinKernel</key>
+                    <string>21.0.0</string>
+                    <key>Replace</key>
+                    <data>AAAAAAAAAGaQZpBmkA==</data>
+                    <key>ReplaceMask</key>
+                    <data>AAAAAAAAAP///////w==</data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Base</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string>algrey, XLNC | Remove version check and panic | 10.13+</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>JfwAAACD+BM=</data>
+                    <key>Identifier</key>
+                    <string>kernel</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>MaxKernel</key>
+                    <string>23.99.99</string>
+                    <key>MinKernel</key>
+                    <string>17.0.0</string>
+                    <key>Replace</key>
+                    <data>JfwAAAAPHwA=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Base</key>
+                    <string>_cpuid_set_info</string>
+                    <key>Comment</key>
+                    <string>Goldfish64, algrey | Bypass GenuineIntel check panic | 12.0+</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>AAAAAAAAMdKzAQ==</data>
+                    <key>Identifier</key>
+                    <string>kernel</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data>AAAAAAAA/////w==</data>
+                    <key>MaxKernel</key>
+                    <string>23.99.99</string>
+                    <key>MinKernel</key>
+                    <string>21.0.0</string>
+                    <key>Replace</key>
+                    <data>kJCQkJCQMdKzAQ==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Base</key>
+                    <string>_cpuid_set_info</string>
+                    <key>Comment</key>
+                    <string>algrey | Force cpuid_cores_per_package to constant (user-specified) | 10.13-10.14</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>wegaAAAA</data>
+                    <key>Identifier</key>
+                    <string>kernel</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data>//3/AAAA</data>
+                    <key>MaxKernel</key>
+                    <string>18.99.99</string>
+                    <key>MinKernel</key>
+                    <string>17.0.0</string>
+                    <key>Replace</key>
+                    <data>uBAAAAAA</data>
+                    <key>ReplaceMask</key>
+                    <data>//////8A</data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Base</key>
+                    <string>_cpuid_set_info</string>
+                    <key>Comment</key>
+                    <string>algrey | Force cpuid_cores_per_package to constant (user-specified) | 10.15-11.0</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>wegaAAAA</data>
+                    <key>Identifier</key>
+                    <string>kernel</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data>//3/AAAA</data>
+                    <key>MaxKernel</key>
+                    <string>20.99.99</string>
+                    <key>MinKernel</key>
+                    <string>19.0.0</string>
+                    <key>Replace</key>
+                    <data>uhAAAAAA</data>
+                    <key>ReplaceMask</key>
+                    <data>//////8A</data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Base</key>
+                    <string>_cpuid_set_info</string>
+                    <key>Comment</key>
+                    <string>algrey | Force cpuid_cores_per_package to constant (user-specified) | 13.3+</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>wegaAAA=</data>
+                    <key>Identifier</key>
+                    <string>kernel</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data>//3/AAA=</data>
+                    <key>MaxKernel</key>
+                    <string>23.99.99</string>
+                    <key>MinKernel</key>
+                    <string>22.4.0</string>
+                    <key>Replace</key>
+                    <data>uhAAAAA=</data>
+                    <key>ReplaceMask</key>
+                    <data>//////8=</data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Base</key>
+                    <string>_cpuid_set_info</string>
+                    <key>Comment</key>
+                    <string>algrey | Force cpuid_cores_per_package to constant (user-specified) | 12.0-13.2</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>wegaAAAA</data>
+                    <key>Identifier</key>
+                    <string>kernel</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data>//3/AAAA</data>
+                    <key>MaxKernel</key>
+                    <string>22.3.99</string>
+                    <key>MinKernel</key>
+                    <string>21.0.0</string>
+                    <key>Replace</key>
+                    <data>uhAAAACQ</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+            </array>
             <key>Quirks</key>
             <dict>
                 <key>AppleCpuPmCfgLock</key>
@@ -1022,8 +1280,6 @@
                     <integer>1</integer>
                     <key>revcpuname</key>
                     <string>Apple M2 Pro</string>
-                    <key>revpatch</key>
-                    <string>auto,sbvmm,asset</string>
                 </dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
@@ -1032,7 +1288,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>keepsyms=1 debug=0x100 -v agdpmod=pikera gfxrst=1 -wegnoigpu shikigva=128  revpatch=auto,sbvmm,asset</string>
+                    <string>keepsyms=1 debug=0x100  agdpmod=pikera gfxrst=1 -wegnoigpu shikigva=128 -cpufbeta</string>
                     <key>csr-active-config</key>
                     <data>/wcAAA==</data>
                     <key>prev-lang:kbd</key>
